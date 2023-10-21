@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(192, 33, 142, 1) 32%, rgba(0, 212, 255, 1) 100%);
+}
+
+#mainCont {
+    /* border: 2px solid rebeccapurple; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#content {
+    /* border: 2px solid red; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+#image img {
+    width: 300px;
+    /* border: 2px solid black; */
+    border-radius: 40px;
+    animation-name: anim;
+    animation-duration: 4s;
+}
+
+#name {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: white;
+    background-color: blueviolet;
+    margin: 10px;
+    /* margin-left: 40px;
+    margin-right: 40px; */
+    border-radius: 30px;
+    padding: 10px;
+}
+
+#others {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#dets {
+    /* border: 2px solid red; */
+    padding: 5px;
+}
+
+#type {
+    padding: 10px;
+    background-color: pink;
+    margin-left: 60px;
+    margin-right: 60px;
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+
+#others {
+    margin-bottom: 10px;
+}
+
+.spects {
+    background-color: orange;
+    width: 20%;
+    border-radius: 10px;
+    padding-bottom: 5px;
+    box-shadow: 5px 5px 10px;
+}
+
+#genBtn {
+    /* border: 2px solid white; */
+    width: 150px;
+    height: 80px;
+    margin-top: 10px;
+}
+
+#genBtn button {
+    height: 100%;
+    width: 100%;
+    font-size: 2rem;
+    border: none;
+    border-radius: 20px;
+    background: rgb(63, 94, 251);
+    background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(70, 252, 177, 1) 100%);
+    color: white;
+}
+
+@keyframes anim {
+    0% {
+        scale: 0;
+        opacity: 0;
+    }
+
+    25% {
+        rotate: 30deg;
+    }
+
+    50% {
+        transition: ease-in;
+        opacity: 0.5;
+    }
+
+    100% {
+        scale: 1;
+    }
+}
